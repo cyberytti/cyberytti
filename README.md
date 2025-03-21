@@ -1,6 +1,5 @@
-
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=35&pause=1000&color=F745F7¢er=true&vCenter=true&width=435&lines=Hi+👋,+I'm+Sagnik+Bose" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=35&pause=1000&color=F745F7¢er=true&vCenter=true&width=445&lines=Hi+👋,+I'm+Sagnik+Bose " alt="Typing SVG" />
 </h1>
 <h3 align="center">A passionate student diving deep into the realms of Software Development & AI 🚀</h3>
 
@@ -37,8 +36,8 @@
 *Frameworks & Libraries I Wield*:
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Tkinter-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Tkinter">  <!-- Added logo -->
-  <img src="https://img.shields.io/badge/Gradio-FF6F00?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMGMtNi42MjcgMC0xMiA1LjM3My0xMiAxMnM1LjM3MyAxMiAxMiAxMiAxMi01LjM3MyAxMi0xMi01LjM3My0xMi0xMi0xMnptMCAyMWMtNS41MTQgMC0xMC00LjQ4Ni0xMC0xMHM0LjQ4Ni0xMCAxMC0xMCAxMCA0LjQ4NiAxMCAxMC00LjQ4NiAxMC0xMCAxMHoiLz48cGF0aCBkPSJNMTEgMTFoMnY4aC0ydi04em0wLTZoMnY0aC0ydi00eiIvPjwvc3ZnPg==&logoColor=white" alt="Gradio"> <!-- Added logo -->
+  <img src="https://img.shields.io/badge/Tkinter-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Tkinter">
+  <img src="https://img.shields.io/badge/Gradio-FF6F00?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMGMtNi42MjcgMC0xMiA1LjM3My0xMiAxMnM1LjM3MyAxMiAxMiAxMiAxMi01LjM3MyAxMi0xMi01LjM3My0xMi0xMi0xMnptMCAyMWMtNS41MTQgMC0xMC00LjQ4Ni0xMC0xMHM0LjQ4Ni0xMCAxMC0xMCAxMCA0LjQ4NiAxMCAxMC00LjQ4NiAxMC0xMCAxMHoiLz48cGF0aCBkPSJNMTEgMTFoMnY4aC0ydi04em0wLTZoMnY0aC0ydi00eiIvPjwvc3ZnPg==&logoColor=white" alt="Gradio">
   <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter">
 </p>
 
