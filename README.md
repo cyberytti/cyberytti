@@ -51,7 +51,7 @@ Want to see what I've been up to?  Beam yourself over to my GitHub profile:  [�
 
 ### 🔗 Let's Connect! 🔗
 
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/trueliving)
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/sagnik628?igsh=MXEyamU0MDRlc2J2Zw==)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sbose3739@gmail.com)
 
 ---
