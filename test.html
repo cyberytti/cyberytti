@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Portfolio</title>
+    <style>
+        /* --- Reset & Basic Styles --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, readable font */
+        }
+
+        body {
+            background-color: #121212; /* Dark background */
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden; /* Prevent horizontal scrollbar */
+        }
+
+        .container {
+            width: 85%;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 1200px; /* Limit maximum width for larger screens */
+        }
+
+        /* --- Header & Navigation --- */
+        header {
+            background-color: #1f1f1f;
+            padding: 20px 0;
+            position: sticky;  /* Make header sticky */
+            top: 0;
+            z-index: 100; /* Ensure header stays on top */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+            display: inline-block; /* Needed for padding to work correctly */
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            background-color: #5e50e6; /* Vibrant hover color */
+            color: #fff;
+        }
+
+
+        /* --- Hero Section --- */
+        #hero {
+            background: linear-gradient(135deg, #3a2f8e, #5e50e6); /* Gradient background */
+            text-align: center;
+            padding: 100px 20px;
+            position: relative; /* For positioning the animated elements */
+            overflow: hidden; /* Hide overflowing particles */
+        }
+
+        .hero-content {
+            position: relative; /* Ensure text is above particles */
+            z-index: 2;
+        }
+
+        #hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow */
+        }
+
+        #hero p {
+            font-size: 1.4em;
+            color: #eee;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #fff;
+            color: #3a2f8e;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px); /* Lift button on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* --- About Section --- */
+        #about {
+            padding: 80px 20px;
+            background-color: #1a1a1a;
+        }
+
+        #about h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #5e50e6;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;  /* Space out content */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+
+        .about-text {
+            flex: 1;
+            margin-right: 40px; /* Add space between text and image */
+            min-width: 300px; /* Prevent text from getting too narrow */
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+        }
+
+        .about-image {
+            flex: 1;
+            text-align: center;
+            min-width: 250px; /* Prevent image from getting too small */
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+        }
+
+        /* --- Projects Section --- */
+        #projects {
+            padding: 80px 20px;
+            background-color: #121212;
+        }
+
+        #projects h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #5e50e6;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+            gap: 30px;
+        }
+
+        .project-card {
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            overflow: hidden; /* Hide overflowing content */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px; /* Fixed height for images */
+            object-fit: cover; /* Ensure images cover the area */
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        .project-info h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .project-info p {
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+
+        .project-link {
+            display: inline-block;
+            background-color: #5e50e6;
+            color: #fff;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-link:hover {
+            background-color: #3a2f8e;
+        }
+
+
+        /* --- Contact Section --- */
+        #contact {
+            padding: 80px 20px;
+            background-color: #1a1a1a;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #5e50e6;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ccc;
+            text-align: left; /* Align labels to the left */
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #222;
+            color: #fff;
+            transition: border-color 0.3s ease; /* Smooth border transition */
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #5e50e6;
+            outline: none; /* Remove default focus outline */
+        }
+
+        .form-group textarea {
+            resize: vertical; /* Allow vertical resizing */
+            min-height: 120px;
+        }
+
+        .submit-button {
+            background-color: #5e50e6;
+            color: #fff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 1.1em;
+        }
+
+        .submit-button:hover {
+            background-color: #3a2f8e;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: #121212;
+            text-align: center;
+            padding: 20px 0;
+            color: #888;
+            border-top: 1px solid #333;
+        }
+
+
+        /* --- Animations --- */
+        /* Particle animation for hero section */
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: moveParticles linear infinite;
+        }
+
+        @keyframes moveParticles {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+            }
+        }
+
+        /* Fade-in animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block; /* Stack navigation links */
+                margin: 10px 0;
+            }
+
+            #hero h1 {
+                font-size: 2.5em;
+            }
+
+            #hero p {
+                font-size: 1.2em;
+            }
+
+            .about-content {
+                flex-direction: column; /* Stack about content */
+            }
+
+            .about-text {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr; /* Single column layout */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content container">
+            <h1>Hi, I'm [Your Name]</h1>
+            <p>A passionate web developer with a focus on creating interactive and user-friendly experiences.</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p>I am a dedicated web developer with experience in HTML, CSS, JavaScript, and various front-end
+                        frameworks. I enjoy turning complex problems into simple, beautiful, and intuitive designs.</p>
+                    <p>My goal is to create digital experiences that are not only visually appealing but also highly
+                        functional and accessible to all users.</p>
+                </div>
+                <div class="about-image fade-in">
+                    <img src="https://via.placeholder.com/400x400" alt="Your Profile Picture">  <!-- Replace with your image -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card fade-in">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 1" class="project-image">
+                    <!-- Replace with your project image -->
+                    <div class="project-info">
+                        <h3>Project Title 1</h3>
+                        <p>Short description of the project.  Focus on key features and technologies used.</p>
+                        <a href="#" class="project-link">View Project</a>  <!-- Replace # with project link -->
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card fade-in">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 2" class="project-image">
+                    <!-- Replace with your project image -->
+                    <div class="project-info">
+                        <h3>Project Title 2</h3>
+                        <p>Short description of the project. Focus on key features and technologies used.</p>
+                        <a href="#" class="project-link">View Project</a> <!-- Replace # with project link -->
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card fade-in">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 3" class="project-image">
+                    <!-- Replace with your project image -->
+                    <div class="project-info">
+                        <h3>Project Title 3</h3>
+                        <p>Short description of the project. Focus on key features and technologies used.</p>
+                        <a href="#" class="project-link">View Project</a> <!-- Replace # with project link -->
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="#" method="post">  <!-- Replace # with your form handling URL -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 [Your Name]. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- Smooth Scrolling ---
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    // Remove 'active' class from all links
+                    document.querySelectorAll('nav a').forEach(link => link.classList.remove('active'));
+                    // Add 'active' class to the clicked link
+                    this.classList.add('active');
+
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 60, // Adjust for sticky header
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+
+
+        // --- Fade-in Animation ---
+        const fadeInElements = document.querySelectorAll('.fade-in');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); // Stop observing once visible
+                }
+            });
+        }, {
+            threshold: 0.2 // Trigger when 20% of the element is visible
+        });
+
+        fadeInElements.forEach(element => {
+            observer.observe(element);
+        });
+
+
+        // --- Particle Animation (Hero Section) ---
+        function createParticles() {
+            const heroSection = document.getElementById('hero');
+            const numParticles = 50; // Adjust for more/fewer particles
+
+            for (let i = 0; i < numParticles; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                particle.style.width = `${Math.random() * 10 + 5}px`; // Vary particle size
+                particle.style.height = particle.style.width;
+                particle.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 80%)`; // Random vibrant colors
+                particle.style.animationDuration = `${Math.random() * 10 + 5}s`; // Vary animation speed
+                particle.style.animationDelay = `${Math.random() * 2}s`; // Staggered start
+
+                heroSection.appendChild(particle);
+            }
+        }
+
+        createParticles(); // Call the function to create particles
+    </script>
+</body>
+
+</html>
