@@ -59,8 +59,8 @@ Want to see what I've been up to?  Beam yourself over to my GitHub profile:  [�
 ### 📈 My GitHub Galaxy (Stats) 📈
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=cyberytti&show_icons=true&theme=radical&bg_color=0d1117&border_color=664d03&title_color=45c527&text_color=ffffff" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cyberytti&layout=compact&theme=radical&bg_color=0d1117&border_color=664d03&title_color=45c527&text_color=ffffff" alt="Top Langs" />
+  <img src="https://github-readme-stats.vercel.app/api?username=cyberytti&show_icons=true&theme=radical&bg_color=0d1117&border_color=664d03&title_color=45c527&text_color=ffffff&cache_seconds=1800" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cyberytti&layout=compact&theme=radical&bg_color=0d1117&border_color=664d03&title_color=45c527&text_color=ffffff&cache_seconds=1800" alt="Top Langs" />
 </p>
 
 <p align='center'>
