@@ -48,9 +48,9 @@
   <img src="https://github-readme-stats.vercel.app/api?username=cyberytti&show_icons=true&theme=radical" alt="GitHub Stats" />
 </p>
 
----
-
-### 🐍 Contribution Snake Animation  
+### 🐍 Contribution Snake  
 <p align="center">
-  <img src="https://github.com/cyberytti/cyberytti/blob/output/github-contribution-grid-snake.svg" alt="Snake Animation">
+  <img src="https://github.com/cyberytti/cyberytti/blob/output/github-contribution-grid-snake.svg" alt="Snake Animation" />
 </p>
+
+---
