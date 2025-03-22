@@ -13,7 +13,7 @@
 
 ### ✨ About Me -  The *Short* Story ✨
 
--   🔭 **Currently:**  A Class 11 student with an insatiable curiosity for *Software Development & the magic of AI*.  Think of me as a tech explorer! 🧭
+-   🔭 **Currently:**  A student with an insatiable curiosity for *Software Development & the magic of AI*.  Think of me as a tech explorer! 🧭
 -   🌱 **Learning Quest:**  I'm on a journey to master *AI/ML frameworks* and the art of crafting beautiful apps with *Flutter*.
 -   🤝 **Collaboration Beacon:**  Always up for teaming up on *AI/ML projects* and contributing to the vast world of *open-source*. Let's build something amazing together!
 -   💬 **Ask Me Anything (AMA):**  Got burning questions about *Python*, *AI*, *Flutter*, or the wonders of *Automation*?  Hit me up!
