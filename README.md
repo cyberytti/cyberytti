@@ -1,6 +1,7 @@
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Roboto&size=35&pause=1000&color=F745F7&center=true&vCenter=true&width=445&lines=Hi+👋,+I'm+Sagnik+Bose" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=800&color=F745F7&center=true&vCenter=true&width=500&height=70&lines=Hi+%F0%9F%91%8B,+I'm+Sagnik+Bose;Software+Developer+%7C+AI+Explorer+%7C+Tech+Tinkerer" alt="Typing SVG" />
 </h1>
+
 <h3 align="center">A passionate student diving deep into the realms of Software Development & AI 🚀</h3>
 
 <p align="center">
