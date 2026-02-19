@@ -88,7 +88,7 @@
 | 🏗️ Project | 📝 Description | 🛠️ Tech Stack |
 |:--- |:--- |:--- |
 | **PromptHub** |PromptHub is a minimal, offline-first desktop application for locally managing, organizing, and retrieving AI prompts | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
-| **Project Name 2** | A brief description of this Flutter app or Tool. | ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) |
+| **ToolHunt** |ToolHunt is a locally deployable, AI-powered semantic search engine that enables cybersecurity professionals to efficiently discover relevant security tools from a curated database of over 3,000 entries using natural language queries. | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 
 ---
 
