@@ -87,7 +87,7 @@
 
 | 🏗️ Project | 📝 Description | 🛠️ Tech Stack |
 |:--- |:--- |:--- |
-| **Project Name 1** | A brief description of what this cool AI project does. | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| **PromptHub** |PromptHub is a minimal, offline-first desktop application for locally managing, organizing, and retrieving AI prompts | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) |
 | **Project Name 2** | A brief description of this Flutter app or Tool. | ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) |
 
 ---
